@@ -1,0 +1,290 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+}
+
+section h2 {
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para las tarjetas de doctores */
+#doctores {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#doctores li {
+    display: flex;
+    flex: 1 0 21%;
+    max-width: 21%;
+    margin: 10px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card .container {
+    padding: 16px;
+}
+
+.card h4 {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 8px 0;
+    color: #777;
+}
+
+.card button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 16px;
+    text-align: center;
+    font-size: 16px;/* Estilos generales */
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+    }
+    
+    header {
+        background-color: #007bff;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+    
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    section {
+        margin-bottom: 40px;
+    }
+    
+    footer {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    section h2 {
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+    }
+    
+    #centros-section {
+        text-align: center;
+    }
+    
+    iframe {
+        width: 100%;
+        height: 600px;
+        margin: 20px 0;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    .center-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .card {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin: 10px;
+        padding: 20px;
+        width: calc(33.333% - 40px);
+        box-sizing: border-box;
+        transition: transform 0.3s;
+    }
+    
+    .card h3 {
+        margin: 0 0 10px;
+        font-size: 24px;
+        color: #333;
+    }
+    
+    .card p {
+        margin: 5px 0;
+        color: #777;
+    }
+    
+    .card:hover {
+        transform: translateY(-10px);
+    }
+    
+    /* Estilo para el logo */
+    #logo {
+        margin: 0 auto;
+        height: 100px;
+        width: 200px;
+    }
+    
+    #cerrar-sesion {
+        float: right;
+        margin-top: auto;
+        margin-right: 50px;
+        text-decoration: none;
+        color: #333;
+        border: 3px solid #000000;
+        padding: 10px 20px;
+        border-radius: 4px;
+        background-color: #fff;
+    }
+    
+    #cerrar-sesion:hover {
+        color: #0056b3;
+    }
+    
+    /* Responsividad */
+    @media (max-width: 768px) {
+        nav ul li {
+            display: block;
+            margin-bottom: 10px;
+        }
+    
+        .card {
+            width: calc(50% - 40px);
+        }
+    }
+    
+    @media (max-width: 480px) {
+        .card {
+            width: calc(100% - 40px);
+        }
+    }
+    
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.card button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para el logo */
+#logo {
+    margin: 0 auto;
+    height: 100px;
+    width: 200px;
+}
+
+#cerrar-sesion {
+    float: right;
+    margin-top: auto;
+    margin-right: 50px;
+    text-decoration: none;
+    color: #333;
+    border: 3px solid #000000;
+    padding: 10px 20px;
+    border-radius: 4px;
+    background-color: #fff;
+}
+
+#cerrar-sesion:hover {
+    color: rgb(80, 0, 0);
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    #doctores li {
+        flex: 1 0 46%;
+        max-width: 46%;
+    }
+}
+
+@media (max-width: 480px) {
+    #doctores li {
+        flex: 1 0 100%;
+        max-width: 100%;
+    }
+}

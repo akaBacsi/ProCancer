@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProCáncer - Administrador</title>
+    <link rel="stylesheet" href="stylesBuscarAdmin.css">
+</head>
+<body>
+    <header>
+        <a id="cerrar-sesion" href="../loginPrincipal.html">Cerrar sesión</a>
+        <h1>ProCáncer - Administrador</h1>
+        <nav>
+            <ul>
+                <li><a href="indexAdmin.html">Editar Informaciones</a></li>
+                <li><a href="buscarAdmin.html">Editar Doctores</a></li>
+                <li><a href="centrosAdmin.html">Editar Centros</a></li>
+                <li><a href="perfilAdmin.html">Editar Usuarios</a></li>
+                <li><a href="foroAdmin.html">Administrar Foro</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <main>
+        <section id="admin-doctores">
+            <h2>Panel de Administrador - Doctores</h2>
+            
+            <div class="add-doctor-section">
+                <h3>Agregar Doctor</h3>
+                <form id="add-doctor-form" action="add_doctor.html" method="post" enctype="multipart/form-data">
+                    <label for="doctor-name">Nombre:</label>
+                    <input type="text" id="doctor-name" name="doctor-name" placeholder="Ej. Dr. Juan Pérez" required>
+                    
+                    <label for="specialty">Especialidad:</label>
+                    <input type="text" id="specialty" name="specialty" placeholder="Ej. Oncólogo" required>
+                    
+                    <label for="hospital">Hospital/Clínica:</label>
+                    <input type="text" id="hospital" name="hospital" placeholder="Ej. Hospital Gustavo Fricke" required>
+                    
+                    <label for="email">Correo:</label>
+                    <input type="email" id="email" name="email" placeholder="Ej. juan.perez@clinicancer.cl" required>
+                    
+                    <label for="image-upload">Subir Imagen:</label>
+                    <input type="file" id="image-upload" name="image-upload" accept="image/*">
+                    
+                    <button type="submit">Agregar Doctor</button>
+                </form>
+            </div>
+
+            <div class="existing-doctors">
+                <h3>Doctores Existentes</h3>
+                <ul id="doctores">
+                    <li>
+                        <img src="https://st3.depositphotos.com/1743476/32257/i/450/depositphotos_322579018-stock-photo-smiling-doctor-standing-on-grey.jpg" alt="Dr. Juan Pérez">
+                        <p>Dr. Jenaro Marín</p>
+                        <p>Oncólogo</p>
+                        <p>Hospital Gustavo Fricke</p>
+                        <p>Correo: jen.mar@clinicancer.cl</p>
+                        <button class="remove-doctor" data-doctor-id="1">Eliminar Doctor</button>
+                    </li>
+                    <li>
+                        <img src="https://www.shutterstock.com/image-photo/smiling-female-doctor-lab-coat-600nw-1473042992.jpg" alt="Dra. María González">
+                        <p>Dra. María González</p>
+                        <p>Radioterapeuta</p>
+                        <p>Clinica del Cáncer</p>
+                        <p>Correo: ma.gonz@clinicancer.cl</p>
+                        <button class="remove-doctor" data-doctor-id="2">Eliminar Doctor</button>
+                    </li>
+                    <li>
+                        <img src="https://www.shutterstock.com/image-photo/healthcare-medical-staff-concept-portrait-600nw-2281024823.jpg" alt="Dr. Rodrigo Riquelme">
+                        <p>Dr. Rodrigo Riquelme</p>
+                        <p>Hematólogo</p>
+                        <p>Clinica SA.</p>
+                        <p>Correo: ro.riqu@clinicancer.cl</p>
+                        <button class="remove-doctor" data-doctor-id="3">Eliminar Doctor</button>
+                    </li>
+                    <li>
+                        <img src="https://www.shutterstock.com/image-photo/man-portrait-doctor-white-coat-600nw-2280796707.jpg" alt="Dr. Fernando Gutierrez">
+                        <p>Dr. Fernando Gutierrez</p>
+                        <p>Oncología ginecológica</p>
+                        <p>Clinica SA.</p>
+                        <p>Correo: fe.guti@clinicancer.cl</p>
+                        <button class="remove-doctor" data-doctor-id="4">Eliminar Doctor</button>
+                    </li>
+                    <li>
+                        <img src="https://www.shutterstock.com/image-photo/profile-photo-attractive-family-doc-600nw-1724693776.jpg" alt="Dra. Elena Vilches">
+                        <p>Dra. Elena Vilches</p>
+                        <p>Cirugía general</p>
+                        <p>Clinica SA.</p>
+                        <p>Correo: el.vilc@clinicancer.cl</p>
+                        <button class="remove-doctor" data-doctor-id="5">Eliminar Doctor</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 ProCáncer. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

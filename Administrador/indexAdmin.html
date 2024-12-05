@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProCáncer - Administrador</title>
+    <link rel="stylesheet" href="stylesIndexAdmin.css">
+</head>
+<body>
+    <header>
+        <a id="cerrar-sesion" href="../loginPrincipal.html">Cerrar sesión</a>
+        <h1>ProCáncer - Administrador</h1>
+        <nav>
+            <ul>
+                <li><a href="indexAdmin.html">Editar Informaciones</a></li>
+                <li><a href="buscarAdmin.html">Editar Doctores</a></li>
+                <li><a href="centrosAdmin.html">Editar Centros</a></li>
+                <li><a href="perfilAdmin.html">Editar Usuarios</a></li>
+                <li><a href="foroAdmin.html">Administrar Foro</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <main>
+        <section id="admin-dashboard">
+            <h2>Panel de Administrador</h2>
+            
+            <div class="upload-section">
+                <h3>Subir Información</h3>
+                <form id="upload-form" action="upload_info.html" method="post" enctype="multipart/form-data">
+                    <label for="cancer-type">Tipo de Cáncer:</label>
+                    <input type="text" id="cancer-type" name="cancer-type" placeholder="Ej. Cáncer de Mama" required>
+                    
+                    <label for="description">Descripción:</label>
+                    <textarea id="description" name="description" rows="5" placeholder="Descripción detallada..." required></textarea>
+                    
+                    <button type="submit">Subir Información</button>
+                </form>
+            </div>
+
+            <div class="existing-content">
+                <h3>Contenido Existente</h3>
+                <ul id="content-list">
+                    <!-- Aquí se listarían los contenidos subidos -->
+                    <li>
+                        <h4>Cáncer de Mama</h4>
+                        <p>El cáncer de mama es el crecimiento anormal de células en el tejido mamario. Factores de riesgo incluyen antecedentes familiares, edad avanzada, exposición a radiación, obesidad, consumo de alcohol, entre otros.<br>
+                            Síntomas: bulto en el seno, cambios en la forma o el tamaño del seno, enrojecimiento o descamación de la piel del seno, entre otros.<br>
+                            Tratamiento: cirugía, quimioterapia, radioterapia, terapia hormonal, terapia dirigida, inmunoterapia.</p>
+                    </li>
+                    <li>
+                        <h4>Cáncer de Pulmón</h4>
+                        <p>El cáncer de pulmón se origina en los pulmones y puede diseminarse a otras partes del cuerpo. Factores de riesgo incluyen tabaquismo, exposición al humo de segunda mano, exposición a sustancias químicas o radiación, antecedentes familiares, entre otros.<br>
+                            Síntomas: tos persistente, dolor en el pecho, dificultad para respirar, pérdida de peso inexplicable, entre otros.<br>
+                            Tratamiento: cirugía, quimioterapia, radioterapia, terapia dirigida, inmunoterapia.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 ProCáncer. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

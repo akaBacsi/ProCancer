@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProCáncer</title>
+    <link rel="stylesheet" href="styleslogin.css">
+</head>
+<body>
+    
+    <main>
+        <div class="contenedor__todo">
+            <div class="caja__trasera">
+                <div class="caja__trasera-login">
+                    <h3>¿Ya tienes cuenta?</h3>
+                    <p>Inicia sesión para entrar en la página</p>
+                    <button id="btn__iniciar-sesion">Iniciar Sesión</button>
+                    
+                </div>
+                <div class="caja__trasera-register">
+                    <h3>¿Aun no tienes una cuenta?</h3>
+                    <p>Registrate para que puedas iniciar sesión</p>
+                    <button id="btn__registrarse">Registrarse</button>
+                    <br>
+                    <button id ="btn__admin">Administrador</button>
+                </div>
+            </div>
+            <div class="contenedor__login-register">
+                <form action="Usuario/index.html" class="formulario__login">
+                    <h2>Iniciar sesión</h2>
+                    <input type="email" placeholder="Correo Electronico" required>
+                    <input type="password" placeholder="Contraseña" required>
+                    <button>Entrar</button>
+                </form>
+                
+                <form action="Usuario/index.html" class="formulario__register">
+                    <h2>Registrarse</h2>
+                    <input type="text" id="rut" placeholder="RUT" required>
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="text" placeholder="Apellido Paterno" required>
+                    <input type="email" placeholder="Correo electrónico" required>
+                    <input type="date" placeholder="Fecha de Nacimiento" required>
+                    <select id="sexo" required>
+                        <option value="">Sexo</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                    </select>
+                    <button type="submit">Registrarse</button>
+                </form>                
+            </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

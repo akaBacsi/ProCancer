@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProCáncer - Administrador</title>
+    <link rel="stylesheet" href="stylesPerfilAdmin.css">
+</head>
+<body>
+    <header>
+        <a id="cerrar-sesion" href="../loginPrincipal.html">Cerrar sesión</a>
+        <h1>ProCáncer - Administrador</h1>
+        <nav>
+            <ul>
+                <li><a href="indexAdmin.html">Editar Informaciones</a></li>
+                <li><a href="buscarAdmin.html">Editar Doctores</a></li>
+                <li><a href="centrosAdmin.html">Editar Centros</a></li>
+                <li><a href="perfilAdmin.html">Editar Usuarios</a></li>
+                <li><a href="foroAdmin.html">Administrar Foro</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <main>
+        <section id="admin-usuarios">
+            <h2>Panel de Administrador - Usuarios</h2>
+            
+            <div class="search-section">
+                <h3>Buscar Usuario por RUT</h3>
+                <form id="search-user-form">
+                    <input type="text" id="search-rut" name="search-rut" placeholder="Ingrese el RUT" required>
+                    <button type="submit">Buscar</button>
+                </form>
+            </div>
+
+            <div class="existing-users">
+                <h3>Usuarios Existentes</h3>
+                <ul id="usuarios-list">
+                    <li>
+                        <p><strong>RUT:</strong> 20.522.559-5</p>
+                        <p><strong>Nombre:</strong> Yordan</p>
+                        <p><strong>Apellido:</strong> Cisterna</p>
+                        <p><strong>Correo:</strong> yo.cisterna@duocuc.cl</p>
+                        <p><strong>Teléfono:</strong> +56 9 4510 1494</p>
+                        <p><strong>Fecha de Nacimiento:</strong> 23-11-2001</p>
+                        <p><strong>Sexo:</strong> Masculino</p>
+                        <button class="modify-user" data-user-id="1">Modificar</button>
+                        <button class="remove-user" data-user-id="1">Eliminar</button>
+                    </li>
+                    <li>
+                        <p><strong>RUT:</strong> 12.345.678-9</p>
+                        <p><strong>Nombre:</strong> María López</p>
+                        <p><strong>Apellido:</strong> Ramírez</p>
+                        <p><strong>Correo:</strong> maria.lopez@example.com</p>
+                        <p><strong>Teléfono:</strong> +56 9 8765 4321</p>
+                        <p><strong>Fecha de Nacimiento:</strong> 15-05-1992</p>
+                        <p><strong>Sexo:</strong> Femenino</p>
+                        <button class="modify-user" data-user-id="2">Modificar</button>
+                        <button class="remove-user" data-user-id="2">Eliminar</button>
+                    </li>
+                    <li>
+                        <p><strong>RUT:</strong> 11.111.111-1</p>
+                        <p><strong>Nombre:</strong> Carlos Rodríguez</p>
+                        <p><strong>Apellido:</strong> Martínez</p>
+                        <p><strong>Correo:</strong> carlos.rodriguez@example.com</p>
+                        <p><strong>Teléfono:</strong> +56 9 1122 3344</p>
+                        <p><strong>Fecha de Nacimiento:</strong> 10-03-1969</p>
+                        <p><strong>Sexo:</strong> Masculino</p>
+                        <button class="modify-user" data-user-id="3">Modificar</button>
+                        <button class="remove-user" data-user-id="3">Eliminar</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 ProCáncer. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

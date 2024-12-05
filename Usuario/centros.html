@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProCáncer</title>
+    <link rel="stylesheet" href="stylesCentros.css">
+</head>
+<body>
+    <header>
+        <img id="logo" src="../Imagenes/logo.png" alt="Logo de ProCáncer">
+        <h1 id="titulo-principal">ProCáncer</h1>
+        <a id="cerrar-sesion" href="../loginPrincipal.html">Cerrar sesión</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Información</a></li>
+                <li><a href="buscar.html">Buscar Doctores</a></li>
+                <li><a href="centros.html">Centros Médicos</a></li>
+                <li><a href="perfil.html">Perfil de Usuario</a></li>
+                <li><a href="foro.html">Foro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="centros-section">
+            <h2>Centros Médicos</h2>
+            <p>Centros médicos cercanos a tu ubicación</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15909.632885792966!2d-71.54261663672342!3d-33.04097500004342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9689df4280a2086b%3A0x4e6a7b43ce4a9ca2!2soncocentro!5e0!3m2!1ses-419!2scl!4v1714609288400!5m2!1ses-419!2scl" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            <div class="center-list">
+                <div class="card">
+                    <h3>Oncocentro</h3>
+                    <p>Dirección: Av. La Marina 1702</p>
+                    <p>Teléfono: +56 9 1234 5678</p>
+                    <p>Correo: contacto@oncocentro.cl</p>
+                </div>
+                <div class="card">
+                    <h3>Clinica del Cáncer</h3>
+                    <p>Dirección: Calle Las acacias 456</p>
+                    <p>Teléfono: +56 9 8765 4321</p>
+                    <p>Correo: info@clinicacancer.cl</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 ProCáncer. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

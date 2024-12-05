@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProCáncer - Administrador</title>
+    <link rel="stylesheet" href="stylesCentrosAdmin.css">
+</head>
+<body>
+    <header>
+        <a id="cerrar-sesion" href="../loginPrincipal.html">Cerrar sesión</a>
+        <h1>ProCáncer - Administrador</h1>
+        <nav>
+            <ul>
+                <li><a href="indexAdmin.html">Editar Informaciones</a></li>
+                <li><a href="buscarAdmin.html">Editar Doctores</a></li>
+                <li><a href="centrosAdmin.html">Editar Centros</a></li>
+                <li><a href="perfilAdmin.html">Editar Usuarios</a></li>
+                <li><a href="foroAdmin.html">Administrar Foro</a></li>
+            </ul>
+        </nav>
+    </header> 
+
+    <main>
+        <section id="admin-centros">
+            <h2>Panel de Administrador - Centros Médicos</h2>
+            
+            <div class="add-center-section">
+                <h3>Agregar Centro Médico</h3>
+                <form id="add-center-form" action="add_center.html" method="post">
+                    <label for="center-name">Nombre del Centro:</label>
+                    <input type="text" id="center-name" name="center-name" placeholder="Ej. Oncocentro" required>
+                    
+                    <label for="address">Dirección:</label>
+                    <input type="text" id="address" name="address" placeholder="Ej. Av. Siempre Viva 123" required>
+                    
+                    <label for="email">Correo de Contacto:</label>
+                    <input type="email" id="email" name="email" placeholder="Ej. contacto@oncocentro.cl" required>
+                    
+                    <label for="phone">Teléfono:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Ej. +56 9 1234 5678" required>
+                    
+                    <label for="map-url">URL del Mapa (Google Maps):</label>
+                    <input type="url" id="map-url" name="map-url" placeholder="https://maps.google.com/..." required>
+                    
+                    <button type="submit">Agregar Centro</button>
+                </form>
+            </div>
+
+            <div class="existing-centers">
+                <h3>Centros Médicos Existentes</h3>
+                <ul id="centros-list">
+                    <li>
+                        <h4>Oncocentro</h4>
+                        <p>Dirección: Av. La Marina 1702</p>
+                        <p>Correo: contacto@oncocentro.cl</p>
+                        <p>Teléfono: +56 9 1234 5678</p>
+                        <button class="remove-center" data-center-id="1">Eliminar Centro</button>
+                    </li>
+                    <!-- Más centros aquí -->
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 ProCáncer. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
